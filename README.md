@@ -29,7 +29,7 @@ Parameters are optional. Number of parameters depends on command.
 Returns value assigned to key. If key doesn't exists command will return undefined.
 
 #### set
-**syntax:** set::: key :::value, **returns:** boolean
+**syntax:** set::: key:::value, **returns:** boolean
 
 Creates new key and assigns value to it. If key exists value is reassigned. Command return true if key was created, false otherwise.
 

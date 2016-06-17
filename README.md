@@ -17,7 +17,7 @@ Command line options:
 
 Communication is done using commands. Command has a special format:
 
-COMMAND_NAME:::PARAM_1:::...:::PARAM_n
+**COMMAND_NAME:::PARAM_1:::...:::PARAM_n**
 
 Parameters are optional. Number of parameters depends on command.
 
@@ -26,16 +26,16 @@ Parameters are optional. Number of parameters depends on command.
 #### get
 **syntax:** get:::key
 
-**returns:** string or undefined if key doesn't exists
+**returns:** string or undefined
 
-Returns value assigned to key
+Returns value assigned to key. If key doesn't exists command will return undefined.
 
 #### set
 **syntax:** set:::key:::value
 
-**returns:** true if key was created, false otherwise
+**returns:** boolean
 
-Creates new key and assigns value to it. If key exists value is reassigned.
+Creates new key and assigns value to it. If key exists value is reassigned. Command return true if key was created, false otherwise.
 
 #### count
 
@@ -68,3 +68,13 @@ Returns sum of lengths of all values
 **returns:** string (array in json format)
 
 Returns array of all assigned keys
+
+### Examples
+
+```javascript
+count	// returns 0
+set:::test::test value // creates new key - test, and assigned "test value" to id
+get:::test // returns "test value"
+get:::test2 // returns undefined
+count	// returns 1
+```

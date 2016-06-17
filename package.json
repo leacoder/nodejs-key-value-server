@@ -1,0 +1,17 @@
+{
+  "name": "key-value-server",
+  "version": "1.0.0",
+  "description": "Light-weight key-value server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+      "margs": ">0.1.0"
+  },
+  "author": {
+      "name": "Marcin Owczarczyk",
+      "email": "marow.dev@gmail.com"
+  },
+  "license": "MIT"
+}

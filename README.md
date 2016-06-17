@@ -24,48 +24,36 @@ Parameters are optional. Number of parameters depends on command.
 ### Available commands
 
 #### get
-**syntax:** get:::key
-
-**returns:** string or undefined
+**syntax:** get:::key, **returns:** string or undefined
 
 Returns value assigned to key. If key doesn't exists command will return undefined.
 
 #### set
-**syntax:** set:::key:::value
-
-**returns:** boolean
+**syntax:** set::: key :::value, **returns:** boolean
 
 Creates new key and assigns value to it. If key exists value is reassigned. Command return true if key was created, false otherwise.
 
 #### count
 
-**syntax:** count
-
-**returns:** int
+**syntax:** count, **returns:** int
 
 Returns number of assgined keys
 
 #### heapused
 
-**syntax:** heapused
-
-**returns:** int
+**syntax:** heapused, **returns:** int
 
 Returns size of memory allocated by server (uses process.memoryUsage() command)
 
 #### memsize
 
-**syntax:** memsize
-
-**returns:** int
+**syntax:** memsize, **returns:** int
 
 Returns sum of lengths of all values
 
 #### keys:
 
-**syntax:** keys
-
-**returns:** string (array in json format)
+**syntax:** keys, **returns:** string (array in json format)
 
 Returns array of all assigned keys
 
